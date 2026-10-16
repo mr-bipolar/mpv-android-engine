@@ -26,7 +26,7 @@ See [LICENSING.md](docs/LICENSING.md) for licensing and redistribution informati
 Clone the repository and enter the project directory:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/mr-bipolar/mpv-android-engine.git
 cd mpv-engine
 ```
 
@@ -455,3 +455,8 @@ mpv's client API is thread-safe, applications should avoid racing lifecycle
 operations against active playback calls.
 
 
+## Copyright
+
+Copyright © 2026 mr-bipolar.
+
+This copyright notice applies to original project code only. MPV and other third-party components remain subject to their respective licenses.
