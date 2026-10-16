@@ -1,2 +1,4 @@
 rootProject.name = "mpv-engine"
+
 include ':mpvengine'
+include ':sample:app'

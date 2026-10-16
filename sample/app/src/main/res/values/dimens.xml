@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Corner radius -->
+    <dimen name="radius_sm">8dp</dimen>
+    <dimen name="radius_md">14dp</dimen>
+    <dimen name="radius_lg">20dp</dimen>
+    <dimen name="radius_pill">100dp</dimen>
+
+    <!-- Type scale -->
+    <dimen name="text_display">22sp</dimen>
+    <dimen name="text_title">18sp</dimen>
+    <dimen name="text_title_sm">15sp</dimen>
+    <dimen name="text_body">14sp</dimen>
+    <dimen name="text_body_sm">13sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_caption_sm">11sp</dimen>
+    <dimen name="text_micro">10sp</dimen>
+
+</resources>

@@ -1,7 +1,19 @@
 // NOT BUILT in the authoring sandbox (no Android SDK / Gradle there). Versions are the ones upstream mpv-android
 // uses at the commit this was written against (see docs/VERIFICATION.md); align them with your own project.
+
 buildscript {
-    repositories { mavenCentral(); google() }
-    dependencies { classpath 'com.android.tools.build:gradle:9.2.1' }
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:9.2.1'
+    }
 }
-allprojects { repositories { mavenCentral(); google() } }
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}

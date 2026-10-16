@@ -16,3 +16,13 @@ secrets.properties
 # OS files
 .DS_Store
 Thumbs.db
+
+#test
+/out/
+/out-test/
+
+# Local backup
+sample/settings.gradle.kts.back
+
+# Optional: machine-specific Gradle JVM configuration
+# gradle/gradle-daemon-jvm.properties

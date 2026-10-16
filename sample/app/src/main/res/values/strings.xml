@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Mpv engine</string>
+    <string name="player_ctl_speed">Speed</string>
+    <!-- strings used by MpvVideoPlayer  -->
+    <string name="mp_untitled">Stream</string>
+    <string name="mp_stream_label">STREAM</string>
+    <string name="mp_time_zero">0:00</string>
+    <string name="mp_buffer_fmt">Buffer %1$ds</string>
+    <string name="mp_off">Off</string>
+    <string name="mp_dlg_audio">Audio</string>
+    <string name="mp_dlg_subtitles">Subtitles</string>
+    <string name="mp_dlg_speed">Playback speed</string>
+    <string name="mp_dlg_channels">Channels</string>
+    <string name="mp_add_subtitle_file">Add subtitle file…</string>
+    <string name="mp_track_fmt">Track %1$d</string>
+    <string name="mp_no_audio">No audio tracks</string>
+    <string name="mp_no_channels">No channel list loaded</string>
+    <string name="mp_speed_live">Speed can\'t be changed on live streams</string>
+    <string name="mp_aspect_fit">Fit</string>
+    <string name="mp_aspect_16_9">16:9</string>
+    <string name="mp_aspect_4_3">4:3</string>
+    <string name="mp_aspect_fill">Fill</string>
+    <string name="mp_aspect_stretch">Stretch</string>
+    <string name="mp_menu_info">Stream info</string>
+    <string name="mp_menu_screenshot">Take screenshot</string>
+    <string name="mp_menu_reload">Reload stream</string>
+    <string name="mp_menu_jump_live">Jump to live</string>
+    <string name="mp_menu_copy_url">Copy stream URL</string>
+    <string name="mp_url_copied">Stream URL copied</string>
+    <string name="mp_screenshot_saved">Saved: %1$s</string>
+    <string name="mp_screenshot_failed">Screenshot failed</string>
+    <string name="mp_close">Close</string>
+    <string name="mp_cancel">Cancel</string>
+    <string name="mp_playlist_failed">Could not load the playlist: %1$s</string>
+    <string name="mp_no_url">No stream URL was provided</string>
+    <string name="mp_cert_failed">Could not prepare the HTTPS certificate bundle; HTTPS streams may fail</string>
+    <string name="mp_not_seekable">This stream can\'t be seeked</string>
+    <string name="mp_sub_size_item">Subtitle size…</string>
+    <string name="mp_dlg_sub_size">Subtitle size</string>
+    <string name="mp_sub_small">Small</string>
+    <string name="mp_sub_medium">Medium</string>
+    <string name="mp_sub_large">Large</string>
+    <string name="mp_sub_xl">Extra large</string>
+
+    <string name="player_engine_title">Video player</string>
+    <string name="player_engine_media3">Media3 (ExoPlayer)</string>
+    <string name="player_engine_mpv">MPV</string>
+    <string name="player_menu_engine">Player engine…</string>
+    <string name="player_mpv_unavailable">MPV could not start on this device, using Media3 instead.</string>
+    <string name="player_pip_prev">Previous channel</string>
+    <string name="player_pip_next">Next channel</string>
+    <string name="badge_live">LIVE</string>
+
+    <!-- Player error description -->
+    <string name="error_desc">The connection was lost. Check your network or try another channel.</string>
+
+    <!-- Content descriptions -->
+    <string name="cd_search">Search</string>
+    <string name="cd_settings">Settings</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_more">More options</string>
+    <string name="cd_favorite">Favorite</string>
+    <string name="cd_close">Close</string>
+    <string name="cd_pause">Pause</string>
+    <string name="cd_play">Play</string>
+    <string name="cd_expand">Expand</string>
+    <string name="cd_add">Add</string>
+    <string name="cd_previous">Previous</string>
+    <string name="cd_next">Next</string>
+    <string name="cd_stop">Stop</string>
+    <string name="cd_sort">Sort</string>
+    <string name="enter_video_url">Enter video url.</string>
+
+</resources>

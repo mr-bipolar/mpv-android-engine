@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Surfaces -->
+    <color name="bg">#0A0A0C</color>
+    <color name="bg_1">#121317</color>
+    <color name="card">#17181D</color>
+    <color name="card_2">#1E2025</color>
+
+    <!-- Accent -->
+    <!-- Accent -->
+    <color name="accent">#F5A524</color>
+    <color name="accent_ink">#241701</color>
+    <color name="accent_dim">#7A5713</color>
+
+    <!-- Status -->
+    <color name="live">#FF4D5E</color>
+    <color name="ok">#3DDC97</color>
+    <color name="warn_text">#E3B463</color>
+    <color name="error_text">#FF8A93</color>
+
+    <!-- Folder -->
+    <color name="blue">#4F8FE8</color>
+
+    <!-- Alpha overlays (pre-mixed, for use as flat backgrounds) -->
+    <color name="accent_alpha_08">#14F5A524</color>
+    <color name="accent_alpha_14">#24F5A524</color>
+    <color name="accent_alpha_22">#38F5A524</color>
+    <color name="accent_alpha_35">#59F5A524</color>
+    <color name="live_alpha_08">#14FF4D5E</color>
+    <color name="live_alpha_14">#24FF4D5E</color>
+    <color name="live_alpha_25">#40FF4D5E</color>
+    <color name="ok_alpha_14">#243DDC97</color>
+    <color name="white_alpha_08">#14FFFFFF</color>
+    <color name="white_alpha_10">#1AFFFFFF</color>
+    <color name="white_alpha_14">#24FFFFFF</color>
+    <color name="white_alpha_45">#73FFFFFF</color>
+    <color name="white_alpha_55">#8CFFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+    <color name="white_alpha_65">#A6FFFFFF</color>
+    <color name="white_alpha_75">#BFFFFFFF</color>
+    <color name="black_alpha_45">#73000000</color>
+    <color name="black_alpha_55">#8C000000</color>
+    <color name="black_alpha_75">#BF000000</color>
+    <color name="black_alpha_85">#D9000000</color>
+    <color name="black_alpha_92">#EB000000</color>
+</resources>
