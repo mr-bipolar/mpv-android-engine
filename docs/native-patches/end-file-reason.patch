@@ -1,0 +1,43 @@
+--- a/app/src/main/jni/jni_utils.h
++++ b/app/src/main/jni/jni_utils.h
+@@ -26,4 +26,5 @@
+ 	mpv_MPVLib_eventProperty_Sd,
+ 	mpv_MPVLib_eventProperty_SS,
+ 	mpv_MPVLib_event,
++	mpv_MPVLib_eventEndFile_ii,
+ 	mpv_MPVLib_logMessage_SiS;
+--- a/app/src/main/jni/jni_utils.cpp
++++ b/app/src/main/jni/jni_utils.cpp
+@@ -44,6 +44,7 @@
+     mpv_MPVLib_eventProperty_Sd = env->GetStaticMethodID(mpv_MPVLib, "eventProperty", "(Ljava/lang/String;D)V"); // eventProperty(String, double)
+     mpv_MPVLib_eventProperty_SS = env->GetStaticMethodID(mpv_MPVLib, "eventProperty", "(Ljava/lang/String;Ljava/lang/String;)V"); // eventProperty(String, String)
+     mpv_MPVLib_event = env->GetStaticMethodID(mpv_MPVLib, "event", "(I)V"); // event(int)
++    mpv_MPVLib_eventEndFile_ii = env->GetStaticMethodID(mpv_MPVLib, "eventEndFile", "(II)V"); // eventEndFile(int reason, int error)
+     mpv_MPVLib_logMessage_SiS = env->GetStaticMethodID(mpv_MPVLib, "logMessage", "(Ljava/lang/String;ILjava/lang/String;)V"); // logMessage(String, int, String)
+     #undef FIND_CLASS
+ 
+--- a/app/src/main/jni/event.cpp
++++ b/app/src/main/jni/event.cpp
+@@ -40,6 +40,13 @@
+         env->DeleteLocalRef(jvalue);
+ }
+ 
++// Forwards mpv_event_end_file{reason,error} so Java can tell EOF / STOP / ERROR apart.
++// Must be sent BEFORE the plain END_FILE event (the Java side pairs them).
++static void sendEndFileToJava(JNIEnv *env, mpv_event_end_file *ef)
++{
++    env->CallStaticVoidMethod(mpv_MPVLib, mpv_MPVLib_eventEndFile_ii, (jint) ef->reason, (jint) ef->error);
++}
++
+ static void sendEventToJava(JNIEnv *env, int event)
+ {
+     env->CallStaticVoidMethod(mpv_MPVLib, mpv_MPVLib_event, event);
+@@ -100,6 +107,8 @@
+             break;
+         default:
+             ALOGV("event: %s\n", mpv_event_name(mp_event->event_id));
++            if (mp_event->event_id == MPV_EVENT_END_FILE && mp_event->data)
++                sendEndFileToJava(env, (mpv_event_end_file*)mp_event->data);
+             sendEventToJava(env, mp_event->event_id);
+             break;
+         }

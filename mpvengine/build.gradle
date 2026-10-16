@@ -1,0 +1,30 @@
+// Android library module: pure Java, no Kotlin, no UI. NOT BUILT in the authoring sandbox (see docs/VERIFICATION.md).
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'com.maxplayer.mpv'
+    compileSdk = 36
+
+    defaultConfig {
+        minSdkVersion 23              // same as upstream mpv-android
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    compileOptions {                  // the library sources are Java 8 level (compiled with -source 8 in the sandbox)
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            // Native libraries produced by docs/BUILDING_NATIVE.md: libs/<abi>/{libmpv.so,libplayer.so,libav*.so,libc++_shared.so,...}
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+    packagingOptions { 
+             jniLibs { 
+                 useLegacyPackaging = true 
+                 keepDebugSymbols += ['**/libc++_shared.so'] 
+            }
+      }   // upstream ships .so uncompressed-extracted; adjust if needed
+}

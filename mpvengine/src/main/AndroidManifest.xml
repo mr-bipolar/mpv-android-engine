@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Library manifest: no components, no permissions. The host app declares INTERNET (and, for background
+     audio, its own foreground service) — see docs/INTEGRATION.md. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" />
