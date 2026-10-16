@@ -16,46 +16,35 @@ See [LICENSING.md](docs/LICENSING.md) for licensing and redistribution informati
 
 ## Screenshots
 
-### Video Player
-
-<p align="center">
-  <img src="screenshots/player-horizontal.png" alt="MPV player in landscape mode" width="800">
-</p>
-
-<p align="center">
-  <img src="screenshots/player-vertical.png" alt="MPV player in portrait mode" width="300">
-</p>
-
-### Features
-
 <table>
   <tr>
-    <td align="center">
-      <img src="screenshots/playlist.png" alt="Playlist interface" width="260"><br>
-      <b>Playlist</b>
+    <td align="center" width="40%">
+      <img src="screenshots/player-horizontal.png" alt="MPV player in landscape mode" width="100%">
     </td>
-    <td align="center">
-      <img src="screenshots/menu.png" alt="Player menu" width="260"><br>
-      <b>Player Menu</b>
+    <td align="center" width="40%">
+      <img src="screenshots/audio.png" alt="Audio player interface" width="100%">
+    </td>
+    <td align="center" rowspan="3" width="20%">
+      <img src="screenshots/player-vertical.png" alt="MPV player in portrait mode" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="screenshots/subtitles.png" alt="Subtitle controls" width="260"><br>
-      <b>Subtitles</b>
+      <img src="screenshots/playlist.png" alt="Playlist interface" width="100%">
     </td>
     <td align="center">
-      <img src="screenshots/subtitle-size.png" alt="Subtitle size settings" width="260"><br>
-      <b>Subtitle Size</b>
+      <img src="screenshots/menu.png" alt="Player menu" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/subtitles.png" alt="Subtitle controls" width="100%">
+    </td>
+    <td align="center">
+      <img src="screenshots/subtitle-size.png" alt="Subtitle size settings" width="100%">
     </td>
   </tr>
 </table>
-
-### Audio Player
-
-<p align="center">
-  <img src="screenshots/audio.png" alt="Audio player interface" width="350">
-</p>
 
 
 
