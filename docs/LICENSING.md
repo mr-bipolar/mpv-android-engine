@@ -8,7 +8,7 @@ This is a factual summary of what was verified in the upstream sources, not lega
 | libmpv (mpv) | GPLv2+ by default; LGPLv2.1+ only if built with `-Dgpl=false` **and** without GPL-only files | `mpv/Copyright`; `meson.options` has `gpl` default **true** |
 | FFmpeg as built by mpv-android's recipe | **GPL + version3** (`--enable-gpl --enable-version3`) | `buildscripts/scripts/ffmpeg.sh` |
 | mpv as built by mpv-android's recipe | `-Dgpl` not overridden -> GPL build | `buildscripts/scripts/mpv.sh` |
-| This library's Java sources | **no license chosen** — add your own header/LICENSE | — |
+| This library's Java sources | **MIT License** — copyright © 2026 mr-bipolar | `LICENSE` |
 
 **Consequence:** native binaries produced with the unmodified upstream recipe are GPL-licensed. Distributing an app that
 includes them carries GPL obligations (source offer, license notices, compatibility of the whole work). If that is not
